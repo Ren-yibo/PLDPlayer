@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/mediaBackIb"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="@dimen/live_pic_padding"
+            android:background="@drawable/img_back_white" />
+
+        <TextView
+            android:id="@+id/mediaTitleTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/live_pic_padding"
+            android:textColor="@android:color/white"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true">
+
+        <ImageButton
+            android:id="@+id/mediaPauseIb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/live_pic_padding"
+            android:src="@android:drawable/ic_media_pause"
+            android:background="@null"/>
+
+        <TextView
+            android:id="@+id/mediaStartTimeTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/live_pic_padding"
+            android:layout_toRightOf="@id/mediaPauseIb"
+            android:text="00:00"
+            android:textColor="@android:color/white"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/mediaEndTimeTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/live_pic_padding"
+            android:text="00:00"
+            android:textColor="@android:color/white"
+            android:textSize="16sp" />
+
+        <SeekBar
+            android:id="@+id/mediaSeekBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_centerVertical="true"
+            android:layout_margin="@dimen/live_pic_padding"
+            android:layout_toLeftOf="@id/mediaEndTimeTv"
+            android:layout_toRightOf="@id/mediaStartTimeTv" />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

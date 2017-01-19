@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Pldroid</string>
+
+    <string name="chatMessage">"<Data><![CDATA[<font color="#61a8de">"%1$s":</font><font color="#ffffff">"%2$s"</font>]]></Data>"</string>
+
+
+</resources>

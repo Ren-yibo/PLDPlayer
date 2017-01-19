@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <include layout="@layout/layout_media_top" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true">
+
+        <ImageButton
+            android:id="@+id/mediaPauseIb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/live_pic_padding"
+            android:background="@null"
+            android:src="@android:drawable/ic_media_pause" />
+
+        <TextView
+            android:id="@+id/mediaStartTimeTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/live_pic_padding"
+            android:layout_toRightOf="@id/mediaPauseIb"
+            android:text="00:00"
+            android:textColor="@android:color/white"
+            android:textSize="16sp" />
+
+        <ImageButton
+            android:id="@+id/mediaResizeIb"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="8dp"
+            android:layout_marginLeft="@dimen/live_pic_padding"
+            android:background="@drawable/selector_resize_screen" />
+
+        <TextView
+            android:id="@+id/mediaEndTimeTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/mediaResizeIb"
+            android:text="00:00"
+            android:textColor="@android:color/white"
+            android:textSize="16sp" />
+
+        <SeekBar
+            android:id="@+id/mediaSeekBar"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_margin="@dimen/live_pic_padding"
+            android:layout_toLeftOf="@id/mediaEndTimeTv"
+            android:layout_toRightOf="@id/mediaStartTimeTv" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

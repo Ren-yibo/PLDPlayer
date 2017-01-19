@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:background="#4c000000">
+
+    <TextView
+        android:id="@+id/popMsgSendTv"
+        android:layout_width="50dp"
+        android:layout_height="30dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_margin="@dimen/live_pic_padding"
+        android:background="@drawable/shape_round_blue"
+        android:gravity="center"
+        android:text="发送"
+        android:textColor="@android:color/white"
+        android:textSize="14sp" />
+
+    <EditText
+        android:id="@+id/popMsgSendEt"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="@dimen/live_pic_padding"
+        android:layout_marginLeft="@dimen/live_pic_padding"
+        android:layout_marginTop="@dimen/live_pic_padding"
+        android:layout_toLeftOf="@+id/popMsgSendTv"
+        android:background="@null"
+        android:hint="我也说一句"
+        android:imeOptions="flagNoExtractUi"
+        android:padding="6dp"
+        android:textColor="@android:color/white"
+        android:textColorHint="#999999" />
+
+</RelativeLayout>

@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">PldPlayer</string>
+    <string name="action_settings">Settings</string>
+    <string name="liveChatNormal">"<Data><![CDATA[<font color="#61a8de">"%1$s:"</font><font color="#FFFFFF">"%2$s"</font>]]></Data>"</string>
+</resources>
